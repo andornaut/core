@@ -1191,6 +1191,7 @@ async def test_device_info_called(
     assert device.sw_version == "test-sw"
     assert device.hw_version == "test-hw"
     assert device.via_device_id == via.id
+    assert device.primary_integration == entity_platform.domain
 
 
 async def test_device_info_not_overrides(
